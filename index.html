@@ -22,6 +22,12 @@
 
             font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
         }
+
+        .container-fluid {
+            height: 100vh;
+            overflow: hidden;
+            padding: 0;
+        }
     </style>
     <!-- Swiper -->
     <style>
@@ -32,10 +38,13 @@
             margin-right: auto;
         }
 
-        .swiper-slide swiperImg {
+        .swiper-slide {
             text-align: center;
             font-size: 18px;
-            background: #fff;
+            background:black;
+            color:white;
+            height: 100% !important;
+            margin-bottom: 0 !important;
             /* Center slide text vertically */
             display: -webkit-box;
             display: -ms-flexbox;
@@ -50,75 +59,109 @@
             -webkit-align-items: center;
             align-items: center;
         }
-        .fullImgContainer{
-            height: 80vh;
-            overflow: hidden;
+
+        .swiper-container-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            bottom: 10px;
+            left: 0;
+            width: 100vw;
         }
-        .sImg>img{
+
+        .swiper-container-v {
+            background: #eee;
+        }
+
+        .gallery-top {
+            height: 80vh !important;
             width: 100%;
-            height: 100%;
         }
+
+        .gallery-thumbs {
+            height: 20vh !important;
+            box-sizing: border-box;
+        }
+
+        .gallery-thumbs .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+        }
+    </style>
+    <!-- 圖片設定 -->
+    <style>
+    .selectImg{
+        height: 100%;
+    }
     </style>
 </head>
 
 <body>
-    <!-- NAV  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+    <div class="container-fluid">
+        <!-- Swiper -->
+        <div class="swiper-container swiper-container-v">
+            <div class="swiper-wrapper">
+                <!-- 現正熱映 -->
+                <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-container swiper-container-h  gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Horizontal Slide 1</div>
+                            <div class="swiper-slide">Horizontal Slide 2</div>
+                            <div class="swiper-slide">Horizontal Slide 3</div>
+                            <div class="swiper-slide">Horizontal Slide 4</div>
+                            <div class="swiper-slide">Horizontal Slide 5</div>
+                            <div class="swiper-slide">Horizontal Slide 6</div>
+                        </div>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                    <!-- 電影選擇 -->
+                    <div class="swiper-container gallery-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
+                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
+                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
+                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
+                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
+                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 即將上映 -->
+                <div class="swiper-slide">
+                    <div class="swiper-container gallery-top swiper-container-h">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Horizontal Slide 1</div>
+                            <div class="swiper-slide">Horizontal Slide 2</div>
+                            <div class="swiper-slide">Horizontal Slide 3</div>
+                            <div class="swiper-slide">Horizontal Slide 4</div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination-h"></div>
+                    </div>
+                </div>
+                <!-- 這個是什麼 -->
+                <div class="swiper-slide">
+                    <div class="swiper-container gallery-top swiper-container-h">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Horizontal Slide 1</div>
+                            <div class="swiper-slide">Horizontal Slide 2</div>
+                            <div class="swiper-slide">Horizontal Slide 3</div>
+                            <div class="swiper-slide">Horizontal Slide 4</div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination-h"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-v"></div>
         </div>
-    </nav>
-    <!-- Swiper -->
-    <div class="swiper-container fullImgContainer">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><div class="sImg"><img src="img/exam01.jpg" alt=""></div></div>
-            <div class="swiper-slide"><div class="sImg"><img src="img/exam01.jpg" alt=""></div></div>
-            <div class="swiper-slide"><div class="sImg"><img src="img/exam01.jpg" alt=""></div></div>
-            <div class="swiper-slide"><div class="sImg"><img src="img/exam01.jpg" alt=""></div></div>
-            <div class="swiper-slide"><div class="sImg"><img src="img/exam01.jpg" alt=""></div></div>
-            <div class="swiper-slide"><div class="sImg"><img src="img/exam01.jpg" alt=""></div></div>
-            <div class="swiper-slide"><div class="sImg"><img src="img/exam01.jpg" alt=""></div></div>
-            <div class="swiper-slide"><div class="sImg"><img src="img/exam01.jpg" alt=""></div></div>
-            <div class="swiper-slide"><div class="sImg"><img src="img/exam01.jpg" alt=""></div></div>
-            <div class="swiper-slide"><div class="sImg"><img src="img/exam01.jpg" alt=""></div></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
     </div>
+
+
+
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- boostrap -->
@@ -126,22 +169,39 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <!-- Swiper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            direction: 'vertical',
-
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+        $(document).ready(function () {
+
+            var swiperH = new Swiper('.swiper-container-h', {
+
+            });
+            var swiperV = new Swiper('.swiper-container-v', {
+                direction: 'vertical',
+                // mousewheel: true,
+                pagination: {
+                    el: '.swiper-pagination-v',
+                    clickable: true,
+
+                },
+            });
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+
+        });
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+        });
+    </script>
     <!-- Initialize AOS -->
     <script>
         AOS.init();
