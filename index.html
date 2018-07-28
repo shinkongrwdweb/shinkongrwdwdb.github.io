@@ -29,7 +29,7 @@
             padding: 0;
         }
     </style>
-    <!-- Swiper -->
+    <!-- Swiper 現正熱映 -->
     <style>
         .swiper-container {
             width: 100%;
@@ -72,23 +72,23 @@
             background: #eee;
         }
 
-        .gallery-top {
+        .galleryTop {
             height: 70vh !important;
             width: 100%;
         }
 
-        .gallery-thumbs {
+        .galleryThumbs {
             height: 30vh !important;
             box-sizing: border-box;
         }
 
-        .gallery-thumbs .swiper-slide {
-            width: 12%;
+        .galleryThumbs .swiper-slide {
+            width: 100%;
             height: 100%;
             opacity: 0.4;
         }
 
-        .gallery-thumbs .swiper-slide-active {
+        .galleryThumbs .swiper-slide-active {
             opacity: 1;
         }
 
@@ -124,14 +124,6 @@
         .bannerImg {
             width: 100%;
         }
-        .imgCover{
-            width: 100%;
-            height: 20vh;
-            bottom: 30vh;
-            position: absolute;
-            background-color: rgba(0,0, 0, 0.5);
-            z-index: 99;
-        }
     </style>
 </head>
 
@@ -142,10 +134,9 @@
             <div class="swiper-wrapper">
                 <!-- 現正熱映 -->
                 <div class="swiper-slide d-flex flex-column">
-                    <div class="swiper-container swiper-container-h  gallery-top">
+                    <div class="swiper-container swiper-container-h galleryTop">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide swBanner">
-                                
                                 <img src="img/exam01.jpg" alt="" class="bannerImg">
                             </div>
                             <div class="swiper-slide swBanner">
@@ -166,7 +157,7 @@
                         </div>
                     </div>
                     <!-- 電影選擇 -->
-                    <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-container galleryThumbs">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide select">
                                 <img src="img/exam01s.jpg" alt="" class="selectImg">
@@ -175,13 +166,13 @@
                                 <img src="img/exam02s.jpg" alt="" class="selectImg">
                             </div>
                             <div class="swiper-slide select">
-                                <img src="img/exam06s.jpg" alt="" class="selectImg">
+                                <img src="" alt="" class="selectImg">
                             </div>
                             <div class="swiper-slide select">
-                                <img src="img/exam01s.jpg" alt="" class="selectImg">
+                                <img src="" alt="" class="selectImg">
                             </div>
                             <div class="swiper-slide select">
-                                <img src="img/exam02s.jpg" alt="" class="selectImg">
+                                <img src="" alt="" class="selectImg">
                             </div>
                             <div class="swiper-slide select">
                                 <img src="img/exam06s.jpg" alt="" class="selectImg">
@@ -193,31 +184,9 @@
                     </div>
                 </div>
                 <!-- 即將上映 -->
-                <div class="swiper-slide">
-                    <div class="swiper-container gallery-top swiper-container-h">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">Horizontal Slide 1</div>
-                            <div class="swiper-slide">Horizontal Slide 2</div>
-                            <div class="swiper-slide">Horizontal Slide 3</div>
-                            <div class="swiper-slide">Horizontal Slide 4</div>
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination swiper-pagination-h"></div>
-                    </div>
-                </div>
+
                 <!-- 這個是什麼 -->
-                <div class="swiper-slide">
-                    <div class="swiper-container gallery-top swiper-container-h">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">Horizontal Slide 1</div>
-                            <div class="swiper-slide">Horizontal Slide 2</div>
-                            <div class="swiper-slide">Horizontal Slide 3</div>
-                            <div class="swiper-slide">Horizontal Slide 4</div>
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination swiper-pagination-h"></div>
-                    </div>
-                </div>
+
             </div>
             <div class="swiper-pagination swiper-pagination-v"></div>
         </div>
@@ -254,14 +223,15 @@
                 },
             });
         });
-        var galleryTop = new Swiper('.gallery-top', {
-
+        var galleryTop = new Swiper(".galleryTop", {
+            loop: true,
+            loopAdditionalSlides: 4,
         });
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
+        var galleryThumbs = new Swiper(".galleryThumbs", {
             spaceBetween: 10,
-            loop:true,
+            loop: true,
             centeredSlides: true,
-            slidesPerView: 'auto',
+            slidesPerView: 5,
             touchRatio: 0.2,
             slideToClickedSlide: true,
             navigation: {
@@ -269,6 +239,8 @@
                 prevEl: '.swiper-button-prev',
             }
         });
+        galleryTop.controller.control = galleryThumbs;
+        galleryThumbs.controller.control = galleryTop;
     </script>
     <!-- Initialize AOS -->
     <script>
