@@ -41,8 +41,8 @@
         .swiper-slide {
             text-align: center;
             font-size: 18px;
-            background:black;
-            color:white;
+            background: black;
+            color: white;
             height: 100% !important;
             margin-bottom: 0 !important;
             /* Center slide text vertically */
@@ -73,17 +73,17 @@
         }
 
         .gallery-top {
-            height: 80vh !important;
+            height: 70vh !important;
             width: 100%;
         }
 
         .gallery-thumbs {
-            height: 20vh !important;
+            height: 30vh !important;
             box-sizing: border-box;
         }
 
         .gallery-thumbs .swiper-slide {
-            width: 25%;
+            width: 12%;
             height: 100%;
             opacity: 0.4;
         }
@@ -91,12 +91,39 @@
         .gallery-thumbs .swiper-slide-active {
             opacity: 1;
         }
+
+        /* 右邊點點 */
+
+        .swiper-container-vertical>.swiper-pagination-bullets {
+            right: 10px;
+            top: 50%;
+            -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+        }
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            border-radius: 100%;
+            background: white;
+            opacity: .2;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #007aff;
+        }
     </style>
     <!-- 圖片設定 -->
     <style>
-    .selectImg{
-        height: 100%;
-    }
+        .selectImg {
+            height: 100%;
+        }
+
+        .bannerImg {
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -109,24 +136,51 @@
                 <div class="swiper-slide d-flex flex-column">
                     <div class="swiper-container swiper-container-h  gallery-top">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">Horizontal Slide 1</div>
-                            <div class="swiper-slide">Horizontal Slide 2</div>
-                            <div class="swiper-slide">Horizontal Slide 3</div>
-                            <div class="swiper-slide">Horizontal Slide 4</div>
-                            <div class="swiper-slide">Horizontal Slide 5</div>
-                            <div class="swiper-slide">Horizontal Slide 6</div>
+                            <div class="swiper-slide swBanner">
+                                <img src="img/exam01.jpg" alt="" class="bannerImg">
+                            </div>
+                            <div class="swiper-slide swBanner">
+                                <img src="img/exam02.jpg" alt="" class="bannerImg">
+                            </div>
+                            <div class="swiper-slide swBanner">
+                                <img src="img/exam03.jpg" alt="" class="bannerImg">
+                            </div>
+                            <div class="swiper-slide swBanner">
+                                <img src="img/exam04.jpg" alt="" class="bannerImg">
+                            </div>
+                            <div class="swiper-slide swBanner">
+                                <img src="img/exam05.jpg" alt="" class="bannerImg">
+                            </div>
+                            <div class="swiper-slide swBanner">
+                                <img src="img/exam06.jpg" alt="" class="bannerImg">
+                            </div>
                         </div>
                     </div>
                     <!-- 電影選擇 -->
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
-                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
-                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
-                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
-                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
-                            <div class="swiper-slide select"><img src="img/exam01.jpg" alt=""class="selectImg"></div>
+                            <div class="swiper-slide select">
+                                <img src="img/exam01s.jpg" alt="" class="selectImg">
+                            </div>
+                            <div class="swiper-slide select">
+                                <img src="img/exam02s.jpg" alt="" class="selectImg">
+                            </div>
+                            <div class="swiper-slide select">
+                                <img src="img/exam06s.jpg" alt="" class="selectImg">
+                            </div>
+                            <div class="swiper-slide select">
+                                <img src="img/exam01s.jpg" alt="" class="selectImg">
+                            </div>
+                            <div class="swiper-slide select">
+                                <img src="img/exam02s.jpg" alt="" class="selectImg">
+                            </div>
+                            <div class="swiper-slide select">
+                                <img src="img/exam06s.jpg" alt="" class="selectImg">
+                            </div>
                         </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
                     </div>
                 </div>
                 <!-- 即將上映 -->
@@ -196,10 +250,15 @@
         });
         var galleryThumbs = new Swiper('.gallery-thumbs', {
             spaceBetween: 10,
+            loop:true,
             centeredSlides: true,
             slidesPerView: 'auto',
             touchRatio: 0.2,
             slideToClickedSlide: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
         });
     </script>
     <!-- Initialize AOS -->
