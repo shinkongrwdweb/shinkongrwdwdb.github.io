@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- SkTeam -->
+    <link rel="stylesheet" href="css/SKswiper.css">
     <title>ShinKongTeamWork</title>
     <!-- 全域 -->
     <style>
@@ -27,92 +30,6 @@
             height: 100vh;
             overflow: hidden;
             padding: 0;
-        }
-    </style>
-    <!-- Swiper 現正熱映 -->
-    <style>
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: black;
-            color: white;
-            height: 100% !important;
-            margin-bottom: 0 !important;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-
-        .swiper-container-horizontal>.swiper-pagination-bullets,
-        .swiper-pagination-custom,
-        .swiper-pagination-fraction {
-            bottom: 10px;
-            left: 0;
-            width: 100vw;
-        }
-
-        .swiper-container-v {
-            background: #eee;
-        }
-
-        .galleryTop {
-            height: 70vh !important;
-            width: 100%;
-        }
-
-        .galleryThumbs {
-            height: 30vh !important;
-            box-sizing: border-box;
-        }
-
-        .galleryThumbs .swiper-slide {
-            width: 100%;
-            height: 100%;
-            opacity: 0.4;
-        }
-
-        .galleryThumbs .swiper-slide-active {
-            opacity: 1;
-        }
-
-        /* 右邊點點 */
-
-        .swiper-container-vertical>.swiper-pagination-bullets {
-            right: 10px;
-            top: 50%;
-            -webkit-transform: translate3d(0, -50%, 0);
-            transform: translate3d(0, -50%, 0);
-        }
-
-        .swiper-pagination-bullet {
-            width: 12px;
-            height: 12px;
-            display: inline-block;
-            border-radius: 100%;
-            background: white;
-            opacity: .2;
-        }
-
-        .swiper-pagination-bullet-active {
-            opacity: 1;
-            background: #007aff;
         }
     </style>
     <!-- 圖片設定 -->
@@ -184,7 +101,56 @@
                     </div>
                 </div>
                 <!-- 即將上映 -->
-
+                <div class="swiper-slide d-flex flex-column">
+                    <div class="swiper-container swiper-container-h galleryTop2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swBanner2">
+                                <img src="img/exam01.jpg" alt="" class="bannerImg">
+                            </div>
+                            <div class="swiper-slide swBanner2">
+                                <img src="img/exam02.jpg" alt="" class="bannerImg">
+                            </div>
+                            <div class="swiper-slide swBanner2">
+                                <img src="img/exam03.jpg" alt="" class="bannerImg">
+                            </div>
+                            <div class="swiper-slide swBanner2">
+                                <img src="img/exam04.jpg" alt="" class="bannerImg">
+                            </div>
+                            <div class="swiper-slide swBanner2">
+                                <img src="img/exam05.jpg" alt="" class="bannerImg">
+                            </div>
+                            <div class="swiper-slide swBanner2">
+                                <img src="img/exam06.jpg" alt="" class="bannerImg">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 電影選擇 -->
+                    <div class="swiper-container galleryThumbs2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide select2">
+                                <img src="img/exam01s.jpg" alt="" class="selectImg">
+                            </div>
+                            <div class="swiper-slide select2">
+                                <img src="img/exam02s.jpg" alt="" class="selectImg">
+                            </div>
+                            <div class="swiper-slide select2">
+                                <img src="" alt="" class="selectImg">
+                            </div>
+                            <div class="swiper-slide select2">
+                                <img src="" alt="" class="selectImg">
+                            </div>
+                            <div class="swiper-slide select2">
+                                <img src="" alt="" class="selectImg">
+                            </div>
+                            <div class="swiper-slide select2">
+                                <img src="img/exam06s.jpg" alt="" class="selectImg">
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                    </div>
+                </div>
                 <!-- 這個是什麼 -->
 
             </div>
@@ -208,6 +174,7 @@
 
     <!-- Initialize Swiper -->
     <script>
+        // 初始化
         $(document).ready(function () {
 
             var swiperH = new Swiper('.swiper-container-h', {
@@ -223,6 +190,7 @@
                 },
             });
         });
+        // 現正熱映
         var galleryTop = new Swiper(".galleryTop", {
             loop: true,
             loopAdditionalSlides: 4,
@@ -241,6 +209,26 @@
         });
         galleryTop.controller.control = galleryThumbs;
         galleryThumbs.controller.control = galleryTop;
+
+        // 即將上映
+        var galleryTop2 = new Swiper(".galleryTop2", {
+            loop: true,
+            loopAdditionalSlides: 4,
+        });
+        var galleryThumbs2 = new Swiper(".galleryThumbs2", {
+            spaceBetween: 10,
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 5,
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+        galleryTop2.controller.control = galleryThumbs2;
+        galleryThumbs2.controller.control = galleryTop2;
     </script>
     <!-- Initialize AOS -->
     <script>
