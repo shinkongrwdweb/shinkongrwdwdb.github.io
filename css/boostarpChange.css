@@ -1,14 +1,52 @@
+.container {
+    padding: 0;
+}
+
 .container-fluid {
-    height: 90vh;
+    height: 93vh;
     overflow: hidden;
     padding: 0;
     position: absolute;
-    top: 10vh;
+    top: 7vh;
 }
-.navbarH{
-    height: 10vh;
-    background-color: rgba(0, 0, 0,1);
+
+.marginL {
+    margin-left: auto;
 }
-.navbar-brand>img{
-    height: 6vh;
+
+.btn-group {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.nav-link {
+    display: block;
+    padding: 1.25vh 12px!important;
+    color:#E08024!important;
+}
+.nav-link:hover {
+    color:white!important;
+}
+.nav-linkLast{
+    padding-right: 0!important;
+}
+.navbarH {
+    padding: 0;
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navbar-brand {
+    padding: 1.25vh 3vw 1.25vh 0;
+    margin: 0;
+}
+
+.navbar-brand>img {
+    height: 4.5vh;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 90vw;
+    }
 }
