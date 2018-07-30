@@ -1,0 +1,11 @@
+.container-fluid {
+    height: 90vh;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 10vh;
+}
+.navbarH{
+    height: 10vh;
+    background-color: rgba(0, 0, 0,1);
+}

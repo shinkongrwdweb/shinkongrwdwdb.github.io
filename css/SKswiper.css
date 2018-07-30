@@ -41,7 +41,7 @@
 
 .galleryTop {
     height: 70vh !important;
-    width: 100%;
+    width: 100vw;
 }
 
 .galleryThumbs {
@@ -50,12 +50,12 @@
 }
 
 .galleryTop2 {
-    height: 70vh !important;
+    height: 65vh !important;
     width: 100%;
 }
 
 .galleryThumbs2 {
-    height: 30vh !important;
+    height: 25vh !important;
     box-sizing: border-box;
 }
 
