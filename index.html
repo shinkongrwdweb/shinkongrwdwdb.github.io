@@ -37,30 +37,62 @@
             width: 100%;
         }
     </style>
+    <!-- 原生 -->
+    <style>
+        .marginL {
+            margin-left: auto;
+            margin-right: 5vw;
+        }
+
+        .cover {
+            position: absolute;
+            left: 5vw;
+            width: 40%;
+            height: calc(100% - 120px);
+            text-align: left;
+        }
+
+        .btn-group {
+            position: absolute;
+            bottom: 60px;
+            left: 32vw;
+            z-index: 99;
+        }
+
+        .nowplay {
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: orange;
+        }
+    </style>
 </head>
 
 <body>
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbarH">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        <a class="navbar-brand" href="#">
+            <img src="img/logo-Horizontal-white.png" alt="">
+        </a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-
+        </button> -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav marginL">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">關於我們</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">線上訂票</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">即將上映</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">現正熱映</a>
                 </li>
             </ul>
         </div>
@@ -75,6 +107,28 @@
                     <div class="swiper-container swiper-container-h galleryTop">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide swBanner">
+                                <!-- cover -->
+                                <div class="cover">
+                                    <div class="title">
+                                        <h1>把哥哥退貨可以嗎</h1>
+                                    </div>
+                                    <div class="main">
+                                        <p>上映日期：2018-07-20
+                                            <br>片　　長：02時04分
+                                            <br>發行公司：CatchPlayIMDb
+                                            <br>分數：7.1
+                                            <br>導演：維塔亞東俞揚(WittayaThongYuyong)
+                                            <br>演員：桑尼蘇莞門坦諾(SunnySuwanmethanon)、烏拉薩雅斯帕邦德(YayaUrassayaSperbund)、尼坤(NichkhunHorvejkul)
+                                            <br>
+                                            <br>台灣破億、影史泰片票房冠軍電影《模犯生》製作團隊最新爆笑喜劇泰國上映首周票房近7千萬泰銖超越《模犯生》挑戰紀錄模範生妹妹VS廢柴魯哥哥兄妹諜對諜天菜保衛戰！
+                                            <br>韓國男子天團「2PM」成員尼坤萌憨帥氣溫柔浪漫迷死人在模範生妹妹珍（Yaya　飾）面前形同廢柴魯哥哥的查（Sunny　飾），從小到大只會找麻煩與搞破壞，特別是以惡整老妹為樂，而這次查，要如何出招來惡搞珍與天菜男友「小餅」（尼坤　飾）的完美愛情？</p>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-secondary">更多資訊</button>
+                                        <button type="button" class="btn btn-secondary">搶先看</button>
+                                        <button type="button" class="btn btn-secondary">立即訂票</button>
+                                    </div>
+                                </div>
                                 <img src="img/now/BrotheroftheYearBanner.jpg" alt=" " class="bannerImg ">
                             </div>
                             <div class="swiper-slide swBanner ">
@@ -92,6 +146,9 @@
                             <div class="swiper-slide swBanner ">
                                 <img src="img/now/ShopliftersBanner.jpg" alt=" " class="bannerImg ">
                             </div>
+                        </div>
+                        <div class="nowplay">
+                            <p>現正熱映</p>
                         </div>
                     </div>
                     <!-- 電影選擇 -->
