@@ -40,13 +40,19 @@
 }
 
 .galleryTop {
-    height: 70vh !important;
+    height: 65vh !important;
     width: 100vw;
+    position: absolute;
+    top: 0;
 }
 
 .galleryThumbs {
-    height: 30vh !important;
+    width: 90%;
+    height: 28vh !important;
     box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .galleryTop2 {
