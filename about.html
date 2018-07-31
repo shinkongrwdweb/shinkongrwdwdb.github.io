@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- SkTeam -->
     <link rel="stylesheet" href="css/boostarpChange.css">
+    <link rel="stylesheet" href="css/Map.css">
     <title>ShinKongTeamWork</title>
     <!-- 全域 -->
     <style>
@@ -59,8 +60,6 @@
 
         footer {
             width: 100%;
-            position: fixed;
-            bottom: 0;
             height: 7vh;
             line-height: 7vh;
             background-color: black;
@@ -83,7 +82,8 @@
         .aboutLogo {
             margin: 6vh 0 0 0;
         }
-        .aboutLogoImg{
+
+        .aboutLogoImg {
             height: 48px;
         }
     </style>
@@ -144,15 +144,19 @@
     </div>
     <div class="container aboutContain">
         <div class="mainTop mainTopL">
-            <h1 class="UnderLine">ABOUT</h1>
-
+            <h1 class="UnderLine">Map</h1>
+            <div id="map"></div>
         </div>
         <div class="mainTop mainTopR">
             <div class="UnderLine aboutLogo">
                 <img src="img/logo-Horizontal-white.png" alt="" class="aboutLogoImg">
             </div>
             <div class="mainText">
-                <p></p>
+                <p>地址：台中市臺灣大道三段301號13-14樓</p>
+                <br>
+                <p>(位於新光三越百貨台中中港店) </p>
+                <br>
+                <p>電話：04-2258-9911</p>
             </div>
         </div>
     </div>
@@ -167,38 +171,32 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <!-- Swiper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <!-- Map -->
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {
+                lat: 24.1652572,
+                lng: 120.64370830000007
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 16,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE5at1OPL91mo4XizxFKZL1QRQch1pS2E&callback=initMap" async
+        defer></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            speed: 800,
-            loop: true,
-            centeredSlides: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                }
-            }
-        });
-    </script>
     <!-- Initialize AOS -->
     <script>
         AOS.init();
