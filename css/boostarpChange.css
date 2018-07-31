@@ -16,7 +16,7 @@
 
 .btn-group {
     position: absolute;
-    bottom: -4px;
+    bottom:0;
     right:0;
 }
 .btn-secondary{
