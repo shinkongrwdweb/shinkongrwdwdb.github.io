@@ -68,6 +68,9 @@
         top: 300px;
         z-index: 99;
     }
+    .mainInfo{
+        display: none;
+    }
     .nowplaytext {
         margin: 0 60px 0 0;
     }
