@@ -55,7 +55,7 @@
         position: static;
         order: 2;
         width: 100vw;
-        margin-top: 6vh;
+        margin-top: 55px;
         padding: 0 5%;
         box-sizing: border-box;
     }
@@ -65,7 +65,7 @@
     .tip {
         position: absolute;
         left: -5%;
-        top: 300px;
+        top: 45vh;
         z-index: 99;
     }
     .mainInfo{
