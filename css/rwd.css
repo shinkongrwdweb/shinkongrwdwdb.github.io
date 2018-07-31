@@ -55,7 +55,7 @@
         position: static;
         order: 2;
         width: 100vw;
-        margin-top: 2vh;
+        margin-top: 6vh;
         padding: 0 5%;
         box-sizing: border-box;
     }
@@ -64,8 +64,8 @@
     }
     .tip {
         position: absolute;
-        left: 0;
-        top: 530px;
+        left: -5%;
+        top: 300px;
         z-index: 99;
     }
     .nowplaytext {
