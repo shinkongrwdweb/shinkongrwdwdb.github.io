@@ -19,10 +19,13 @@
     bottom: -4px;
     right:0;
 }
+.btn-secondary{
+    border-left:1px solid black; 
+}
 .nav-link {
     display: block;
     padding: 1.25vh 12px!important;
-    color:#E08024!important;
+    color:#DF8024!important;
 }
 .nav-link:hover {
     color:white!important;
