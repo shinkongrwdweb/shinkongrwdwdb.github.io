@@ -29,21 +29,65 @@
         }
 
         h1 {
+            font-size: 40px;
             color: #DF8024;
+            margin: 6vh 0 0 0;
         }
 
         p {
             margin: 0;
         }
-        .aboutContain{
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .UnderLine {
+            padding-bottom: 24px;
+            border-bottom: 1px solid white;
+        }
+
+        .underNav {
+            padding-top: 7vh;
+        }
+
+        .aboutContain {
             width: 80%;
-            height: 93vh;
-            position: absolute;
-            top:7vh;
-            left: 10%;
+            display: flex;
+        }
+
+        footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            height: 7vh;
+            line-height: 7vh;
+            background-color: black;
+            padding: 0 10%
         }
     </style>
-    
+    <style>
+        .mainTop {
+            width: 37.5vw;
+        }
+
+        .mainTopL {
+            margin-right: 5vw;
+        }
+
+        .mainText {
+            margin-top: 24px;
+        }
+
+        .aboutLogo {
+            margin: 6vh 0 0 0;
+        }
+        .aboutLogoImg{
+            height: 48px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -72,8 +116,50 @@
         </div>
     </nav>
     <!-- NAV 結束 -->
-<footer></footer>
-    <div class="container aboutContain"></div>
+
+    <div class="container aboutContain underNav">
+        <div class="mainTop mainTopL">
+            <h1>ABOUT</h1>
+            <p class="title UnderLine">關於新光影城</p>
+            <div class="mainText">
+                <p>台中新光影城座落於最繁華的七期新光三越百貨中港店13、14樓， 擁有兩座全球最專業的杜比全景聲DOLBY ATMOSR系統，以最佳立體音效環境，提供顧客如臨其境之撼。</p>
+                <br>
+                <p>2016年6月，建置全球第一座杜比全景聲DOLBY ATMOSR搭配美國MediaMation MX4D，完美呈現聲歷其境的完美震撼。</p>
+                <br>
+                <p>搭配五座DOLBY杜比 7.1 環繞音響系統以及全數位化影廳，觀影座位共計有2,026個座位，除此之外，在視覺方面，影廳並設有4K數位投影機、高幀率3D(HFR)系統，搭配特殊規格影片之時，更可感受到放映畫質的亮度、鮮銳度以及3D的景深層次。</p>
+            </div>
+        </div>
+        <div class="mainTop mainTopR">
+            <h1>Preferential</h1>
+            <p class="title UnderLine">停車優惠</p>
+            <div class="mainText">
+                <p>1. 一張有價電影票根折抵一小時停車時數，每台車每日最後折抵上限四小時。</p>
+                <br>
+                <p>2. 請於購票時出示停車代幣，以折抵停車時數。
+                </p>
+                <br>
+                <p>3. 離場時請於各電梯口繳費機投入停車幣，確認是否需再補繳費用後離場。</p>
+            </div>
+        </div>
+    </div>
+    <div class="container aboutContain">
+        <div class="mainTop mainTopL">
+            <h1 class="UnderLine">ABOUT</h1>
+
+        </div>
+        <div class="mainTop mainTopR">
+            <div class="UnderLine aboutLogo">
+                <img src="img/logo-Horizontal-white.png" alt="" class="aboutLogoImg">
+            </div>
+            <div class="mainText">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © 2018 新光影城 Inc. 保留一切權利。 </p>
+        </div>
+    </footer>
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- boostrap -->
