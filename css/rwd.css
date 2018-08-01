@@ -41,7 +41,7 @@
     .container-fluid {
         top: 0;
         height: 100vh;
-        padding-top: 10vh;
+        padding: 10vh 0 8vh 0;
     }
     .swTop {
         display: flex;
@@ -57,13 +57,11 @@
     }
     .swImgContainer {
         height: 40vh;
+        display: flex;
+        order: 1;
     }
     .swImg {
-        position: static;
-        display: flex;
-        height: 100%;
-        transform: translateX(-50vw);
-        order: 1;
+        height: 40vh;
     }
     .tip {
         position: fixed;
