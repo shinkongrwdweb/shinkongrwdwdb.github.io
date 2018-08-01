@@ -52,7 +52,7 @@
         display: flex;
         height: 40vh;
         width: 90vw;
-        padding: 3vh 10vw 0 10vw;
+        padding: 3vh 5vw 0 5vw;
         order: 2;
     }
     .swImgContainer {
@@ -67,7 +67,7 @@
     }
     .tip {
         position: fixed;
-        left: -52vw;
+        left: -56vw;
         top: 35vh;
         height: 5vh;
     }
@@ -87,12 +87,14 @@
         margin:0;
     }
     .Ename {
+        font-size: 14px;
         margin-bottom:5px;
     }
     .timeText{
+        font-size: 14px;
         margin-bottom:5px;
     }
     .mainInfo{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
