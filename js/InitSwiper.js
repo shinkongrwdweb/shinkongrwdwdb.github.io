@@ -1,13 +1,13 @@
 var galleryTop = new Swiper('.gallery-top', {
     effect: 'fade',
     loop: true,
-    loopAdditionalSlides: 7,
+    loopAdditionalSlides: 8,
     spaceBetween: 10,
 
 });
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     loop: true,
-    loopAdditionalSlides: 7,
+    loopAdditionalSlides: 8,
     spaceBetween: 30,
     centeredSlides: true,
     slidesPerView: 'auto',
