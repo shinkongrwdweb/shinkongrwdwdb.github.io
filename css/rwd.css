@@ -41,7 +41,7 @@
     .container-fluid {
         top: 0;
         height: 100vh;
-        padding: 10vh 0 8vh 0;
+        padding: 10vh 0 10vh 0;
     }
     .swTop {
         display: flex;
@@ -97,5 +97,11 @@
     }
     .mainInfo{
         font-size: 14px;
+    }
+    .mainActer{
+        display: none;
+    }
+    .btn-group{
+        display: none;
     }
 }
