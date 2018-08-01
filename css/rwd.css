@@ -64,21 +64,24 @@
         height: 40vh;
     }
     .tip {
-        position: fixed;
-        left: -56vw;
+        left:0;
         top: 35vh;
         height: 5vh;
     }
     .nowplay {
         height: 5vh;
     }
+    .boxSek {
+        width: 10vw;
+        transform: skew(45deg) translateX(-5vw);
+    }
+    .tipContainer{
+        top:35vh;
+    }
     .nowplaytext {
-        margin: 0 40px 0 0;
-        text-align: right;
         line-height: 5vh;
         font-size: 18px;
         font-weight: bold;
-        transform: skew(-45deg);
     }
     h1{
         font-size: 24px;
