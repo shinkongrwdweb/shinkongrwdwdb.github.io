@@ -36,8 +36,8 @@
     }
     .container-fluid {
         top: 0;
-        height: 100vh;
-        padding: 10vh 0 10vh 0;
+        height: 90vh;
+        padding: 10vh 0 0 0;
     }
     .swTop {
         display: flex;
@@ -46,8 +46,9 @@
     .cover {
         position: static;
         display: flex;
+        flex-direction: column;
         height: 40vh;
-        width: 90vw;
+        width: 100vw;
         padding: 3vh 5vw 0 5vw;
         order: 2;
     }
@@ -60,55 +61,92 @@
         height: 40vh;
     }
     .tip {
-        left:0;
+        left: 0;
         top: 35vh;
         height: 5vh;
     }
     .nowplay {
         height: 5vh;
     }
-    .tipContainer{
-        top:35vh;
+    .tipContainer {
+        top: 35vh;
     }
     .nowplaytext {
         line-height: 5vh;
         font-size: 18px;
         font-weight: bold;
     }
-    h1{
+    h1 {
         font-size: 24px;
-        margin:0;
+        margin: 0;
     }
     .Ename {
         font-size: 14px;
-        margin-bottom:5px;
+        margin-bottom: 5px;
     }
-    .timeText{
+    .timeText {
         font-size: 14px;
-        margin-bottom:5px;
+        margin-bottom: 5px;
     }
-    .mainInfo{
+    .mainInfo {
         font-size: 14px;
     }
-    .mainActer{
+    .mainActer {
         display: none;
     }
-    .btn-group{
+    .btn-group {
         display: none;
     }
-    .box{
+    .box {
         transform: scaleX(1.1)
     }
-    .navbarH{
+    .navbarH {
         display: flex;
         height: 10vh;
     }
-    .Navmenu{
+    .Navmenu {
         display: flex;
         height: 10vh;
+        order: 2;
     }
-    .navbar-brand{
+    .navbar-brand {
         display: flex;
+        order: 1;
     }
-
+    .navbarH .container {
+        width: auto;
+    }
+    .navbar-collapse {
+        position: absolute;
+        z-index: 99;
+        top: 10vh;
+        background-color: black;
+        width: 100vw;
+        left: 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .nav-linkLast {
+        padding-right: 12px !important;
+    }
+    .nav-item {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .mainDirector {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .iconCollect{
+        display: flex;
+        justify-content: flex-end;
+        width: 90vw;
+        height: 15vh;
+    }
+    .icon{
+        margin-left: 3vw;
+    }
+    .icon>img{
+        height: 15vh;
+    }
 }
