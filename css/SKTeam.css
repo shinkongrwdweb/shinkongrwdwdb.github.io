@@ -121,8 +121,8 @@ p {
 }
 .boxSek{
     background-color: #DF8024;
-    width: 5vw;
-    transform: skew(45deg,0) translateX(-2vw);
+    width: 10vw;
+    transform: skew(45deg,0) translateX(-5vw);
 }
 .tip {
     width: 100vw;

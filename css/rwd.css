@@ -22,13 +22,9 @@
     .mainIntroduction {
         display: none;
     }
-    .btn-group {}
 }
 
-@media only screen and (max-width: 630px) {
-    .navbar {
-        display: none;
-    }
+@media only screen and (max-width: 810px) {
     .gDown {
         display: none;
     }
@@ -71,10 +67,6 @@
     .nowplay {
         height: 5vh;
     }
-    .boxSek {
-        width: 10vw;
-        transform: skew(45deg) translateX(-5vw);
-    }
     .tipContainer{
         top:35vh;
     }
@@ -104,4 +96,19 @@
     .btn-group{
         display: none;
     }
+    .box{
+        transform: scaleX(1.1)
+    }
+    .navbarH{
+        display: flex;
+        height: 10vh;
+    }
+    .Navmenu{
+        display: flex;
+        height: 10vh;
+    }
+    .navbar-brand{
+        display: flex;
+    }
+
 }
