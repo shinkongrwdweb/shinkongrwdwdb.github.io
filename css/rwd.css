@@ -1,99 +1,62 @@
 @media only screen and (max-width: 1024px) {
     .gallery-thumbs .swiper-slide {
-        width: 12vw;
+        width: 14vw;
         height: 100%;
         opacity: 0.4;
     }
     .gallery-thumbs .swiper-slide-active {
         opacity: 1;
     }
-    .cover {
-        position: absolute;
-        bottom: 0;
-        left: 5vw;
-        width: 40vw;
-        height: 95%;
-        text-align: justify;
+    .gTop{
+        height: 63vh;
     }
-    h1 {
-        font-size: 30px;
-        margin-bottom: 0px;
+    .gDown{
+        padding-top: 5vh;
     }
-    .Ename {
-        margin-bottom: 9px;
+    .tip{
+        left: -215px;
+        transform: scale(0.8);
     }
-    .timeText {
-        margin-bottom: 9px;
+    .mainInfo{
+        text-align: left;
     }
-    .title2 {
-        font-size: 18px;
-        margin-top: 20px;
-        font-weight: bold;
+    .mainIntroduction{
+        display: none;
     }
-    .nowplay {
-        position: absolute;
-        top: 10px;
-        left: -170px;
-        width: 350px;
-        height: 35px;
-        background-color: #DF8024;
-        transform: skew(45deg);
+    .btn-group{
+        transform: scale(0.8);
     }
 }
 
 @media only screen and (max-width: 630px) {
-    .navbar {
-        height: 10vh;
-    }
-    .container-fluid {
-        padding-top: 10vh;
-        height: 100vh;
-        top: 0;
-        display: flex;
-    }
-    .cover {
-        position: static;
-        order: 2;
-        width: 100vw;
-        margin-top: 55px;
-        padding: 0 5%;
-        box-sizing: border-box;
-    }
-    .gDown {
+    .navbar{
         display: none;
     }
-    .tip {
-        position: absolute;
-        left: -5%;
-        top: 45vh;
-        z-index: 99;
-    }
-    .mainInfo{
+    .gDown{
         display: none;
-    }
-    .nowplaytext {
-        margin: 0 60px 0 0;
-    }
-    .main {
-        height: 50vh;
     }
     .gTop{
-        height: 90vh;
+        height: 100%;
     }
-    .swTop {
-        width: 100vw;
-        height: 90vh;
-        overflow: hidden;
+    .gTopColor{
+        display: none;
+    }
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+    .swTop{
         display: flex;
         flex-direction: column;
     }
-    .swImg {
-        height: 35vh;
-        width: auto;
-        order: 1;
+    .swImg{
+        height: 40vh;
     }
-    .btn-group {
-        bottom: 5vh;
-        right: 5%;
+    .cover{
+        width: 90vw;
     }
+    .tip{
+    }
+
 }
