@@ -10,7 +10,7 @@
     }
     .container-fluid {
         top: 0;
-        height: 90vh;
+        height: 100vh;
         padding: 10vh 0 0 0;
     }
     .swTop {
@@ -85,11 +85,15 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .TopSlL{
+    .TopSl{
         display: block;
     }
-    .TopSlR{
+    .iconContainer{
         display: block;
+        position: fixed;
+        bottom: 0;
+        background-color: black;
+
     }
     .iconCollect {
         display: flex;
