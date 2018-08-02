@@ -85,6 +85,9 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .TopSl{
+        display: block;
+    }
     .iconCollect {
         display: flex;
         justify-content: flex-end;
