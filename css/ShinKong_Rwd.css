@@ -85,7 +85,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .TopSl{
+    .TopSlL{
+        display: block;
+    }
+    .TopSlR{
         display: block;
     }
     .iconCollect {

@@ -6,7 +6,8 @@ var galleryTop = new Swiper('.gallery-top', {
 
     navigation: {
         nextEl: '.swiper-button-next',
-    },
+        prevEl: '.swiper-button-prev',
+    }
 
 });
 var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -21,7 +22,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
+    }
 });
 galleryTop.controller.control = galleryThumbs;
 galleryThumbs.controller.control = galleryTop;

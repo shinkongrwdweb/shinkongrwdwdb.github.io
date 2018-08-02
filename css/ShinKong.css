@@ -37,7 +37,10 @@ p {
     height: 100%;
     opacity: 0.4;
 }
-.TopSl{
+.TopSlL{
+    display: none;
+}
+.TopSlR{
     display: none;
 }
 .gallery-thumbs .swiper-slide-active {
