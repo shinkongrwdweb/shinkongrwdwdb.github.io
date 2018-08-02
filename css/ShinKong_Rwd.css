@@ -85,8 +85,15 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .TopSl{
+    .TopSlR{
         display: block;
+        position: absolute;
+        top: 20vh;
+    }
+    .TopSlL{
+        display: block;
+        position: absolute;
+        top: 20vh;
     }
     .iconContainer{
         display: block;
