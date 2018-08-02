@@ -20,9 +20,10 @@
     }
     .navbar-brand>img {
         display: flex;
+        height: 6vh;
     }
     .navbarH .container {
-        width: auto;
+        width: 60vw;
         margin: 0;
     }
     .navbar-collapse {
