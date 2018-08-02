@@ -22,3 +22,9 @@
 .navbar-brand>img {
     height: 4.5vh;
 }
+.Nav {
+    height: 7vh;
+}
+.marginL {
+    margin-left: auto;
+}

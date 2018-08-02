@@ -1,29 +1,3 @@
-@media only screen and (max-width: 1024px) {
-    .gallery-thumbs .swiper-slide {
-        width: 14vw;
-        height: 100%;
-        opacity: 0.4;
-    }
-    .gallery-thumbs .swiper-slide-active {
-        opacity: 1;
-    }
-    .gTop {
-        height: 63vh;
-    }
-    .gDown {
-        padding-top: 5vh;
-    }
-    .tip {
-        left: -215px;
-    }
-    .mainInfo {
-        text-align: left;
-    }
-    .mainIntroduction {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 810px) {
     .gDown {
         display: none;
@@ -70,6 +44,7 @@
     }
     .tipContainer {
         top: 35vh;
+        height: 5vh;
     }
     .nowplaytext {
         line-height: 5vh;
@@ -91,6 +66,9 @@
     .mainInfo {
         font-size: 14px;
     }
+    .mainIntroduction{
+        display: none;
+    }
     .mainActer {
         display: none;
     }
@@ -100,52 +78,7 @@
     .box {
         transform: scaleX(1.1)
     }
-    .navbarH {
-        display: flex;
-        height: 10vh;
-        justify-content: flex-end;
-    }
-    .Navmenu {
-        display: flex;
-        height: 10vh;
-        width: 20vw;
-        padding: 0;
-        order: 2;
-    }
-    .navbar-brand {
-        display: flex;
-        width: 80vw;
-        order: 1;
-        justify-content: center;
-        padding: 0;
-    }
-    .navbar-brand >img{
-        display: flex;
-    }
-    .navbarH .container {
-        width: auto;
-        margin: 0;
-    }
-    .navbar-collapse {
-        position: absolute;
-        z-index: 99;
-        top: 10vh;
-        background-color: black;
-        width: 100vw;
-        left: 0;
-        text-align: center;
-        box-sizing: border-box;
-    }
-    .nav-linkLast {
-        padding-right: 12px !important;
-    }
-    .nav-item {
-        border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .navbar-toggler-icon {
-        width: 100%;
-        height: 5vh;
-    }
+    
     .mainDirector {
         white-space: nowrap;
         overflow: hidden;
@@ -160,7 +93,46 @@
     .icon {
         margin-left: 3vw;
     }
-    .icon>img {
-        height: 15vh;
+    .iconInfo{
+        background-image: url("../img/icon/more-white-01.png");
+        width: 10vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .iconInfo:hover{
+        background-image: url("../img/icon/more-orange-01.png");
+        width: 10vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .iconVideo{
+        background-image: url("../img/icon/firsttosee-white-01.png");
+        width: 10vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .iconVideo:hover{
+        background-image: url("../img/icon/more-orange-01.png");
+        width: 10vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .iconGetTic{
+        background-image: url("../img/icon/booking-white-01.png");
+        width: 10vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .iconGetTic:hover{
+        background-image: url("../img/icon/more-orange-01.png");
+        width: 10vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }

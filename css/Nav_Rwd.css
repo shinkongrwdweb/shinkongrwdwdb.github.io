@@ -1,0 +1,48 @@
+@media only screen and (max-width: 990px) {
+    .navbarH {
+        display: flex;
+        height: 10vh;
+        justify-content: flex-end;
+    }
+    .Navmenu {
+        display: flex;
+        height: 10vh;
+        width: 20vw;
+        padding: 0;
+        order: 2;
+    }
+    .navbar-brand {
+        display: flex;
+        width: 80vw;
+        order: 1;
+        justify-content: center;
+        padding: 0;
+    }
+    .navbar-brand>img {
+        display: flex;
+    }
+    .navbarH .container {
+        width: auto;
+        margin: 0;
+    }
+    .navbar-collapse {
+        position: absolute;
+        z-index: 99;
+        top: 10vh;
+        background-color: black;
+        width: 100vw;
+        left: 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .nav-linkLast {
+        padding-right: 12px !important;
+    }
+    .nav-item {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .navbar-toggler-icon {
+        width: 100%;
+        height: 5vh;
+    }
+}

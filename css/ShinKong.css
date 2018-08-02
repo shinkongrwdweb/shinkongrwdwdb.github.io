@@ -85,10 +85,6 @@ p {
     padding-top: 3vh;
 }
 
-.Nav {
-    height: 7vh;
-}
-
 .Ename {
     color: #DF8024;
     margin-bottom: 18px;
@@ -158,10 +154,6 @@ p {
     padding: 0;
     position: absolute;
     top: 7vh;
-}
-
-.marginL {
-    margin-left: auto;
 }
 
 .btn-group {
