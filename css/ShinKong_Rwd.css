@@ -70,7 +70,7 @@
     .mainIntroduction{
         display: none;
     }
-    .mainActer {
+    .mainDirector {
         display: none;
     }
     .btn-group {
@@ -148,6 +148,20 @@
     }
     .iconGetTic:hover{
         background-image: url("../img/icon/booking-orange-01.png");
+        width: 10vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .iconTellMe{
+        background-image: url("../img/icon/Notice-white-01.png");
+        width: 10vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .iconTellMe:hover{
+        background-image: url("../img/icon/Notice-orange-01.png");
         width: 10vh;
         background-size: contain;
         background-repeat: no-repeat;
