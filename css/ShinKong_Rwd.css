@@ -24,6 +24,7 @@
         height: 40vh;
         width: 100vw;
         padding: 3vh 5vw 0 5vw;
+        background-color: black;
         order: 2;
     }
     .swImgContainer {
@@ -115,7 +116,7 @@
         background-position: center;
     }
     .iconVideo:hover{
-        background-image: url("../img/icon/more-orange-01.png");
+        background-image: url("../img/icon/firsttosee-orange-01.png");
         width: 10vh;
         background-size: contain;
         background-repeat: no-repeat;
@@ -129,7 +130,7 @@
         background-position: center;
     }
     .iconGetTic:hover{
-        background-image: url("../img/icon/more-orange-01.png");
+        background-image: url("../img/icon/booking-orange-01.png");
         width: 10vh;
         background-size: contain;
         background-repeat: no-repeat;
