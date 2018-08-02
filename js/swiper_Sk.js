@@ -4,6 +4,10 @@ var galleryTop = new Swiper('.gallery-top', {
     loopAdditionalSlides: 8,
     spaceBetween: 10,
 
+    navigation: {
+        nextEl: '.swiper-button-next',
+    },
+
 });
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     loop: true,
