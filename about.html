@@ -54,7 +54,7 @@
         }
 
         .underNav {
-            padding-top: 7vh;
+            padding-top: 7vh !important;
         }
 
         .aboutContain {
@@ -69,8 +69,11 @@
             background-color: black;
             padding: 0 10%
         }
-    </style>
-    <style>
+
+        .container {
+            padding: 0;
+        }
+
         .mainTop {
             width: 37.5vw;
         }
@@ -125,7 +128,7 @@
         </button>
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo-Horizontal-white.png" alt="">
+                <img class="navbar-brandImg" src="img/logo-Horizontal-white.png" alt="">
             </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav marginL">
@@ -146,7 +149,6 @@
         </div>
     </nav>
     <!-- NAV 結束 -->
-
     <div class="container aboutContain underNav">
         <div class="mainTop mainTopL">
             <h1>ABOUT</h1>
@@ -225,12 +227,16 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE5at1OPL91mo4XizxFKZL1QRQch1pS2E&callback=initMap" async
         defer></script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- Initialize AOS -->
-    <script>
-        AOS.init();
-    </script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- boostrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <!-- 原生 -->
+    <script src="js/Nav.js"></script>
 </body>
 
 </html>
