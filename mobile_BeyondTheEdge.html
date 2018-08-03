@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <style>
+        .container {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+            letter-spacing: 2px;
+            color: white;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            margin: 15px 0;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+
+        .info {
+            margin-bottom: 15px;
+        }
+
+        .btn:focus {
+            border-color: #2e6da4;
+            background-color: #337ab7;
+
+        }
+
+        .btn_mov:focus {
+            outline: none;
+            background-color: #DF8024;
+            border: none;
+        }
+
+        .fas {
+            width: 20px;
+            color: white;
+        }
+
+        .modal-content {
+            border-radius: 20px;
+            background-color: #333;
+        }
+
+        .modal-header {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 24px;
+            padding-top: 60px;
+            border-bottom: 2px solid #e5e5e5;
+        }
+
+        .modal-title {
+            color: #DF8024;
+            font-weight: bold;
+        }
+
+        .modal-dialog {
+            width: 70%;
+        }
+
+        .modal-body {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .body_top {
+            padding-bottom: 45px;
+        }
+
+        .modal-footer {
+            border: none;
+            width: 100%;
+            background-color: #DF8024;
+            position: fixed;
+            bottom: 0;
+
+        }
+
+        .btn_mov {
+            background-color: #DF8024;
+            width: 100%;
+            border: none;
+            font-size: 24px;
+        }
+
+        .btn_mov:hover {
+            background-color: #DF8024 !important;
+        }
+
+        .btn_mov:active {
+            background-color: #DF8024 !important;
+            border: none;
+        }
+
+        .movie {
+            height: 90vh;
+            ;
+            width: 90vw;
+        }
+
+        .movie>iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLongTitle">電影介紹</h2>
+
+        </div>
+        <div class="modal-body">
+            <div class="info">
+                <p>發行公司：星泰娛樂</p>
+                <br>
+                <p>
+                    導演：亞力山卓波古斯拉斯基(Aleksandr Boguslavskiy) 、 法蘭西斯柯琴柯曼尼(Francesco Cinquemani)
+                    <br>演員：安東尼奧班德拉斯(Antonio Banderas) 、 米羅斯畢克維克(Milos Bikovic) 、 莉波芙 雅克斯尤諾娃(Lyubov Aksyonova)
+                </p>
+                <p></p>
+                <p>
+                    ★ 精巧佈局 出神入化！
+                    <br>★ 7小時完成90天騙局
+                </p>
+                <br>
+            </div>
+            <div class="body_top">
+                <p>
+                    &emsp;&emsp;天賦異稟的賭徒麥奇(米勒斯畢科維奇 飾演)，依靠縝密的計畫以不同身份縱橫賭場，直到一次行動中遭遇一個神秘高手，導致欠下巨額賭債並遭賭場追殺脅迫限時還債。為尋神秘高手，他利用人脈打聽，循線得知神秘高手不只一個，決定聚合這群擁有超自然力量的人，並以自己的方式重回賭場偷天換日，脫離威脅。
+                </p>
+                <br>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <!-- Button trigger modal -->
+            <center>
+                <button type="button" class="btn btn-primary btn_mov" data-toggle="modal" data-target="#mov_BeyondTheEdge">
+                    點我快去看預告片
+                    <i class="fas fa-caret-right"></i>
+                    <i class="fas fa-caret-right"></i>
+                    <i class="fas fa-caret-right"></i>
+                </button>
+            </center>
+        </div>
+    </div>
+    <!-- Modal 8 -->
+    <div class="modal fade" id="mov_BeyondTheEdge" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog movie" role="document">
+            <iframe src="https://www.youtube.com/embed/Ab8FmwKBMMo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

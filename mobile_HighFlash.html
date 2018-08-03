@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <style>
+        
+            .container {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                background-color: black;
+                font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+                letter-spacing: 2px;
+                color: white;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                margin: 15px 0;
+                text-align: justify;
+                letter-spacing: 1px;
+            }
+
+            .info {
+                margin-bottom: 15px;
+            }
+
+            .btn:focus {
+                border-color: #2e6da4;
+                background-color: #337ab7;
+
+            }
+
+            .btn_mov:focus {
+                outline: none;
+                background-color: #DF8024;
+                border: none;
+            }
+
+            .fas {
+                width: 20px;
+                color: white;
+            }
+
+            .modal-content {
+                border-radius: 20px;
+                background-color: #333;
+            }
+
+            .modal-header {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 24px;
+                padding-top: 60px;
+                border-bottom: 2px solid #e5e5e5;
+            }
+
+            .modal-title {
+                color: #DF8024;
+                font-weight: bold;
+            }
+
+            .modal-dialog {
+                width: 70%;
+            }
+
+            .modal-body {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .body_top {
+                padding-bottom: 45px;
+            }
+
+            .modal-footer {
+                border: none;
+                width: 100%;
+                background-color: #DF8024;
+                position: fixed;
+                bottom: 0;
+
+            }
+
+            .btn_mov {
+                background-color: #DF8024;
+                width: 100%;
+                border: none;
+                font-size: 24px;
+            }
+
+            .btn_mov:hover {
+                background-color: #DF8024 !important;
+            }
+
+            .btn_mov:active {
+                background-color: #DF8024 !important;
+                border: none;
+            }
+
+            .movie {
+                height: 90vh;
+                ;
+                width: 90vw;
+            }
+
+            .movie>iframe {
+                width: 100%;
+                height: 100%;
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLongTitle">電影介紹</h2>
+  
+          </div>
+          <div class="modal-body">
+            <div class="info">
+              <p>發行公司：牽猴子整合行銷股份有限公司
+              </p>
+              <br>
+              <p>
+                導演：莊景燊
+                <br>演員：吳慷仁 、 姚以緹 、 尹馨 、 徐詣帆 、 陳以文 、 陳家逵 、 藍葦華 、 朱陸豪 、 周群達(Ducan) 、 李劭婕
+              </p>
+              <p></p>
+              <p>
+                ★ 金獎團隊聯手打造
+                <br>★ 劇本屢獲金獎肯定：2017優良劇本、2013金馬創投 阿榮獎、MONEFF Award、CNC現金獎
+                <br>★ 法醫 × 檢察官 台灣近十年未見的懸疑議題電影
+              </p>
+              <br>
+            </div>
+            <div class="body_top">
+              <p>
+                &emsp;&emsp;難解的是案件？還是人心？
+              </p>
+              <p>&emsp;&emsp;縣長陳益達率領寶港村居民，激烈抗議通聯石化財團汙染漁港，一艘著了火的漁船卻突然駛來，船上更有一具燃燒中的人體！原來，他是寶港村漁民—康文海。自焚身亡的阿海瞬間成為全國焦點，通聯石化因此被勒令停工，阿海迅速成為寶港村英雄，帶頭抗議的陳縣長支持度持續攀升。
+              </p>
+              <p>&emsp;&emsp;檢察官金敏照背負壓力，負責偵辦阿海一案。同時，知名法醫周建生也奉命南下寶港村協助驗屍。在警方拉起的封鎖現場，周建生和金敏照再次重逢，原來曾是未婚夫妻的兩人，因這起全國矚目案件，又勾起了當年懸而未解的感情問題…
+              </p>
+              <p>&emsp;&emsp;當周建生為阿海解剖時，發現阿海已是肝癌末期，更驚人的是，阿海的腎臟，發出了不尋常的藍光！阿海的死因可能不是自焚！隨著案情陷入膠著，牽動各方利益的案件，已經越來越不單純…
+              </p>
+              <br>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- Button trigger modal -->
+            <center>
+              <button type="button" class="btn btn-primary btn_mov" data-toggle="modal" data-target="#mov_HighFlash">
+                點我快去看預告片
+                <i class="fas fa-caret-right"></i>
+                <i class="fas fa-caret-right"></i>
+                <i class="fas fa-caret-right"></i>
+              </button>
+            </center>
+          </div>
+      </div>
+  <!-- Modal 10 -->
+  <div class="modal fade" id="mov_HighFlash" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog movie" role="document">
+      <iframe src="https://www.youtube.com/embed/tginvZuwK_0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

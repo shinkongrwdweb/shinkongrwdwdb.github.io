@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <style>
+        
+            .container {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                background-color: black;
+                font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+                letter-spacing: 2px;
+                color: white;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                margin: 15px 0;
+                text-align: justify;
+                letter-spacing: 1px;
+            }
+
+            .info {
+                margin-bottom: 15px;
+            }
+
+            .btn:focus {
+                border-color: #2e6da4;
+                background-color: #337ab7;
+
+            }
+
+            .btn_mov:focus {
+                outline: none;
+                background-color: #DF8024;
+                border: none;
+            }
+
+            .fas {
+                width: 20px;
+                color: white;
+            }
+
+            .modal-content {
+                border-radius: 20px;
+                background-color: #333;
+            }
+
+            .modal-header {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 24px;
+                padding-top: 60px;
+                border-bottom: 2px solid #e5e5e5;
+            }
+
+            .modal-title {
+                color: #DF8024;
+                font-weight: bold;
+            }
+
+            .modal-dialog {
+                width: 70%;
+            }
+
+            .modal-body {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .body_top {
+                padding-bottom: 45px;
+            }
+
+            .modal-footer {
+                border: none;
+                width: 100%;
+                background-color: #DF8024;
+                position: fixed;
+                bottom: 0;
+
+            }
+
+            .btn_mov {
+                background-color: #DF8024;
+                width: 100%;
+                border: none;
+                font-size: 24px;
+            }
+
+            .btn_mov:hover {
+                background-color: #DF8024 !important;
+            }
+
+            .btn_mov:active {
+                background-color: #DF8024 !important;
+                border: none;
+            }
+
+            .movie {
+                height: 90vh;
+                ;
+                width: 90vw;
+            }
+
+            .movie>iframe {
+                width: 100%;
+                height: 100%;
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLongTitle">電影介紹</h2>
+  
+          </div>
+          <div class="modal-body">
+            <div class="info">
+              <p>發行公司：東寶</p>
+              <br>
+              <p>
+                導演：細田守(Mamoru Hosoda)
+                <br>演員：星野源(Hoshino Gen) 、 黑木華(Haru Kuroki) 、 役所廣司(Koji Yakusho) 、 上白石萌歌(Moka Kamishiraishi) 、 福山雅治(Fukuyama Masaharu)
+              </p>
+              <br>
+            </div>
+            <div class="body_top">
+              <p>&emsp;&emsp;我是和妹妹經歷這場冒險後，才開始學習怎麼當哥哥，身為家中獨子的「小訓」沉浸在全家上下所有的愛和關注中，直到有天爸媽抱著剛出生妹妹「未來」告訴他：「從今以後你就是哥哥了！」4歲的小訓不明白何謂「哥哥」，但如果當了哥哥意味失去家族的寵愛，那他寧可不要這個妹妹！正當他處於新身分的困惑與對妹妹的埋怨中，突然出現在眼前的國中生竟然稱呼他為哥哥？來自未來已經長大的妹妹未來，將帶領小哥哥穿越時空，展開兄妹的第一場大冒險！
+              </p>
+              <p>
+                &emsp;&emsp;萬眾期待！金獎導演細田守最新力作《未來的未來》終於來了！集結星野源、福山雅治、黑木華、役所廣司 打造最動人的夏日兄妹物語，以《跳躍吧！時空少女》即橫掃日本各大動畫大獎的導演細田守，繼《怪物的孩子》後睽違三年，再度帶來新作《未來的未來》，聲優卡司集結日本一線明星如《月薪嬌妻》星野源、日本影帝役所廣司、《重版出來》黑木華等等，以及最後釋出的王牌卡司《第三次殺人》福山雅治，讓世界影迷皆期待不已！故事講述４歲的「小訓」在妹妹「未來」出生後深刻感受到失寵危機，不甘情願成為哥哥的他，有天竟然遇見來自未來的未來，兩人將攜手共闖生命的第一次冒險！細田守表示故事靈感就是來自於自己的一雙兒女，不只是親生女兒名叫未來，5歲的兒子也曾經告訴他夢到2歲的妹妹長大後的樣子！「我認為透過孩子間的小事，能夠窺視人類人性的主題。」粉絲們可以開始期待今年夏天最動人的兄妹物語！
+              </p>
+              <p>&emsp;&emsp;《未來的未來》入圍安錫動畫影展 代表日本角逐世界動畫最高殿堂，宮崎駿、高畑勲兩名導曾獲獎細田守《跳躍吧！時空少女》《夏日大作戰》後再角逐最高殊榮
+              </p>
+              <p>&emsp;&emsp;日本大導細田守最新作品《未來的未來》入圍法國安錫國際動畫影展，代表日本角逐世界動畫最高殿堂！宮崎駿的《紅豬》及高畑勲的《平成狸合戰》兩位大導都曾獲得安錫動畫影展最佳長片大獎，細田守新作《未來的未來》入圍最高殊榮足以證明當代大師之地位。細田守曾以《夏日大作戰》入圍安錫國際動畫影展，也曾《跳躍吧！時空少女》獲得動畫長片特別獎，堪稱今年日本年度電影代表！
+              </p>
+              <p>&emsp;&emsp;動畫大導細田守 最新作品《未來的未來》風光入選坎城影展《未來的未來》成為日本年度代表，入選坎城影展導演雙週單元，將在電影最高殿堂坎城影展風光首映，此次入選也是細田守導演第一部入選坎城的作品！作為坎城影展的重要單元之一，著名動畫導演高?勳生前最後一部動畫電影《輝耀姬物語》也是在導演雙週單元首映，除此之外，許多知名電影作品皆是從雙週單元孕育發跡而出，侯孝賢、易智言導演的作品都曾入選過這個單元，《未來的未來》五月於坎城首映後，8月17日將與台灣觀眾見面！
+              </p>
+              <br>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- Button trigger modal -->
+            <center>
+              <button type="button" class="btn btn-primary btn_mov" data-toggle="modal" data-target="#mov_MIRAI">
+                點我快去看預告片
+                <i class="fas fa-caret-right"></i>
+                <i class="fas fa-caret-right"></i>
+                <i class="fas fa-caret-right"></i>
+              </button>
+            </center>
+          </div>
+      </div>
+  <!-- Modal 13 -->
+  <div class="modal fade" id="mov_MIRAI" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog movie" role="document">
+      <iframe src="https://www.youtube.com/embed/Y-o2WHsKhx8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
