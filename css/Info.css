@@ -1,11 +1,4 @@
-body {
-    background-color: black;
-    font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
-    letter-spacing: 2px;
-    color: white;
-}
-
-p {
+.modal-content>p {
     font-size: 16px;
     line-height: 20px;
     margin: 15px 0;
@@ -24,7 +17,7 @@ p {
 
 .btn_mov:focus {
     outline: none;
-    background-color: #DF8024;
+    background-color: #DF8024 !important;
     border: none;
 }
 
@@ -53,7 +46,7 @@ p {
 }
 
 .modal-dialog {
-    width: 70%;
+    width: 70vw;
 }
 
 .modal-body {
@@ -69,12 +62,21 @@ p {
     border: none;
     background-color: #DF8024;
     border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn_mov {
     background-color: #DF8024;
     width: 100%;
+    font-size: 24px;
+    color: white;
     border: none;
+    display: flex;
+}
+
+.btn_mov_text {
+    float: left;
 }
 
 .btn_mov:hover {
@@ -91,8 +93,27 @@ p {
     ;
     width: 90vw;
 }
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: .5rem;
+    pointer-events:auto;
+}
 
 .movie>iframe {
     width: 100%;
     height: 100%;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 70vw;
+        margin: 1.75rem auto;
+    }
 }
