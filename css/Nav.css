@@ -28,3 +28,11 @@
 .marginL {
     margin-left: auto;
 }
+.navBtn{
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.navBtn:focus {
+    outline: none;
+  }
