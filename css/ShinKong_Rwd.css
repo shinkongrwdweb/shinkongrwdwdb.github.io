@@ -167,4 +167,8 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    .TellMe {
+        top: 33vh;
+        left: 15vw;
+    }
 }
