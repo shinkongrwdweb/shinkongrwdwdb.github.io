@@ -1,0 +1,131 @@
+.GetTic_container_All {
+    width: 70vw;
+    padding-top: 15vh;
+    margin: 0 auto;
+}
+
+.GetTic_container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.GetTic_main {
+    width: 70vw;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.GetTic_top {
+    height: 8vh;
+    background-color: #DF8024;
+}
+
+.SKCinemas_select_form {
+    width: calc( 100vw/3);
+    height: 8vh;
+    margin: 0 auto;
+    padding: 1.4vh 0;
+}
+
+#SKCinemas_select {
+    width: 100%;
+    height: 100%;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.GetTic_text {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.GetTic_select_container {
+    background-color: rgb(240, 240, 240);
+}
+
+.GetTic_select {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2vh;
+}
+
+.GetTic_select_move {
+    width: calc(100%/3);
+    margin-top: 2vh;
+    color: #555;
+    cursor: pointer;
+}
+
+.GetTic_select_move>i {
+    color: #DF8024;
+}
+
+.GetTic_info_container {
+    background-color: white;
+    border-bottom: 1px solid rgb(240, 240, 240);;
+    padding: 2vh 0;
+}
+
+.GetTic_info {
+    flex-direction: column;
+}
+
+.GetTic_info>p {
+    margin-bottom: 0;
+    color: #555;
+}
+
+.GetTic_time_container {
+    background-color: white;
+    border-bottom: 1px solid rgb(240, 240, 240);;
+    padding: 2vh 0;
+    color: #555;
+}
+
+.GetTic_time {
+    width: 30%;
+    margin-right:calc(10%/3);
+}
+.GetTic_time >p{
+    color: #555;
+}
+.GetTic_time:nth-last-child(1) {
+    margin: 0;
+}
+.GetTic_sent_container {
+    background-color: white;
+}
+
+.GetTic_sent {
+    padding: 2vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GetTic_time_btn {
+    background-color: rgb(240, 240, 240);
+    margin: 8px;
+    border-radius: 5px;
+    border: 0;
+    color: #555;
+}
+
+.GetTic_time_btn:nth-last-child(1) {
+    margin-right: 0;
+}
+.GetTic_sent > input {
+    width: 10vw;
+    padding: 1vh 0;
+    background-color: rgb(52, 177, 226);
+    margin-right: 8px;
+    border-radius: 10px;
+    border: 0;
+    color:white;
+}
