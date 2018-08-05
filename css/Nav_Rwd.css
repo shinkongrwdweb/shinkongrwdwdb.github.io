@@ -46,4 +46,9 @@
         width: 100%;
         height: 5vh;
     }
+    .navBtn{
+        width: 100%;
+        letter-spacing: 2px;
+    }
+
 }
