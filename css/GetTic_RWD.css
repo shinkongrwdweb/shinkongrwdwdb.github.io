@@ -16,6 +16,16 @@
         width: 50%;
     }
     .GetTic_select_move{
-        width: 50%;
+        width: 100%;
+    }
+    .GetTic_info > p:nth-child(1){
+        margin-bottom: 1vh;
+    }
+    .GetTic_time_container > .GetTic_container{
+        flex-direction: column;
+    }
+    .GetTic_time{
+        width: 100%;
+        padding-bottom: 2vh;
     }
 }
