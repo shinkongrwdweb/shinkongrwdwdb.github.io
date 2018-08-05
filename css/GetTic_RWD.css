@@ -1,0 +1,21 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 90vw;
+        padding: 0;
+    }
+}
+@media (max-width: 900px) {
+
+    .GetTic_container_All{
+        width: 90vw;
+    }
+    .GetTic_main{
+        width: 90vw;
+    }
+    .SKCinemas_select_form{
+        width: 50%;
+    }
+    .GetTic_select_move{
+        width: 50%;
+    }
+}
