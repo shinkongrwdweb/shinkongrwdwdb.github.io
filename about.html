@@ -102,23 +102,27 @@
             margin: 24px 0 6vh 0;
             height: 40vh;
         }
-        .footer_img{
+
+        .footer_img {
             height: 5vh;
             margin-right: 2vw;
         }
-        .footer{
+
+        .footer {
             display: flex;
             width: 70vw;
             margin: auto;
-            justify-content:center;
-            align-items:center;
-            
+            justify-content: center;
+            align-items: center;
+
         }
-        .footer_text{
+
+        .footer_text {
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
         }
-        .footer_text > p {
+
+        .footer_text>p {
             font-size: 12px;
             height: 3.5vh;
             line-height: 4vh
@@ -145,8 +149,19 @@
 
             }
             footer {
+                height: 25vh;
+            }
+            .footer {
                 margin-top: 30px;
-                height: 100px;
+                height: 25vh;
+                flex-wrap: wrap;
+            }
+            .footer_img {
+                height: 7vh;
+                margin-right: 4vw;
+            }
+            .footer_text>p:nth-child(1){
+                margin-bottom: 4vh;
             }
         }
     </style>
@@ -227,13 +242,13 @@
     </div>
     <footer>
         <div class="footer">
-        <img class="footer_img" src="img/FB.png" alt="">
-        <img class="footer_img" src="img/line.png" alt="">
-        <img class="footer_img" src="img/twitter.png" alt="">
-        <div class="footer_text">
-        <p>©新光影城 2018 僅用於課程學習用途，素材如有侵權，請來信告知</p>
-        <p>e-mail：sj0985109791@gmail.com</p>
-    </div>
+            <img class="footer_img" src="img/FB.png" alt="">
+            <img class="footer_img" src="img/line.png" alt="">
+            <img class="footer_img" src="img/twitter.png" alt="">
+            <div class="footer_text">
+                <p>©新光影城 2018 僅用於課程學習用途，素材如有侵權，請來信告知</p>
+                <p>e-mail：sj0985109791@gmail.com</p>
+            </div>
         </div>
     </footer>
     <!--jQuery-->
