@@ -4,28 +4,31 @@
         padding: 0;
     }
 }
-@media (max-width: 900px) {
 
-    .GetTic_container_All{
+@media (max-width: 900px) {
+    .GetTic_container_All {
         width: 90vw;
     }
-    .GetTic_main{
+    .GetTic_main {
         width: 90vw;
     }
-    .SKCinemas_select_form{
+    .SKCinemas_select_form {
         width: 50%;
     }
-    .GetTic_select_move{
+    .GetTic_select_move {
         width: 100%;
     }
-    .GetTic_info > p:nth-child(1){
+    .GetTic_info>p:nth-child(1) {
         margin-bottom: 1vh;
     }
-    .GetTic_time_container > .GetTic_container{
+    .GetTic_time_container>.GetTic_container {
         flex-direction: column;
     }
-    .GetTic_time{
+    .GetTic_time {
         width: 100%;
         padding-bottom: 2vh;
+    }
+    .GetTic_sent>input {
+        width: 20vw;
     }
 }
