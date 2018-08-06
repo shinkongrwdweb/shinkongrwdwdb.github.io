@@ -37,12 +37,15 @@ p {
     height: 100%;
     opacity: 0.4;
 }
-.TopSlL{
+
+.TopSlL {
     display: none;
 }
-.TopSlR{
+
+.TopSlR {
     display: none;
 }
+
 .gallery-thumbs .swiper-slide-active {
     opacity: 1;
 }
@@ -120,11 +123,13 @@ p {
     background-color: #DF8024;
     width: 5vw;
 }
-.boxSek{
+
+.boxSek {
     background-color: #DF8024;
     width: 10vw;
-    transform: skew(45deg,0) translateX(-5vw);
+    transform: skew(45deg, 0) translateX(-5vw);
 }
+
 .tip {
     width: 100vw;
     height: 55px;
@@ -140,15 +145,18 @@ p {
     height: 55px;
     z-index: 1;
 }
-.tipContainer{
+
+.tipContainer {
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: 99;
 }
-.iconCollect{
+
+.iconCollect {
     display: none;
 }
+
 .container {
     padding: 0;
 }
@@ -163,11 +171,47 @@ p {
 
 .btn-group {
     position: absolute;
-    bottom:0;
-    right:0;
+    bottom: 0;
+    right: 0;
 }
-.btn-secondary{
-    border-left:1px solid black; 
+
+.btn-secondary {
+    border-left: 1px solid black;
+}
+
+.TellMe {
+    position: relative;
+    top: 50vh;
+    left: 25.4vw;
+    height: 8vh;
+    width: 20vw;
+}
+
+.TellMe>p {
+    position: absolute;
+    bottom: 40px;
+}
+
+.TellMe>input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.TellMe_sent {
+    position: absolute;
+    bottom: 0;
+    left: 199px;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    height: 30px;
+    width: 50px;
+}
+
+.TellMe_sent:hover {
+    text-decoration: none;
+    color: black;
 }
 
 @media (min-width: 1200px) {
